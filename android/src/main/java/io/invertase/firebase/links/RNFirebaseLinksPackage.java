@@ -28,6 +28,11 @@ public class RNFirebaseLinksPackage implements ReactPackage {
     return modules;
   }
 
+  @Override
+  public List<Class<? extends JavaScriptModule>> createJSModules() {
+    return null;
+  }
+
   /**
    * @param reactContext
    * @return a list of view managers that should be registered with {@link UIManagerModule}
